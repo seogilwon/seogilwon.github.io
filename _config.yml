@@ -59,23 +59,11 @@ menu:
   - title:             Blog
     url:               /blog/
     submenu:
-      - title:  GithubPages
-        url:      /githubpages/
-      - title:  Library
-        url:      /library/
-      - title:  ML/DL
-        url:      /mldl/
-      - title:  Class
-        url:      /class/
-      - title:  blog-etc
-        url:      /blog-etc/
-  - title:             Etc
-    url:               /etc/
-    submenu:
-      - title:  Diary
-        url:      /diary/
-      - title:  Travel
-        url:      /travel/
+      - title:  Test1
+        url:      /test1/
+      - title:  Test2
+        url:      /test2/
+
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..

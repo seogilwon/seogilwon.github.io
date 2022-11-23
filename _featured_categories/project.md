@@ -6,5 +6,5 @@ menu: true
 submenu: false
 order: 2
 description: >
-  인공지능 프로젝트
+  프로젝트
 ---

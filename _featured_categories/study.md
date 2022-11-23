@@ -6,5 +6,5 @@ menu: true
 submenu: false
 order: 3
 description: >
-   연구, 공부
+   공부
 ---

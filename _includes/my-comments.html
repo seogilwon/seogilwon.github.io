@@ -1,4 +1,4 @@
-{% assign provider = site.comments.provider | default: "disqus" %}
+{% assign provider = site.comments.provider | default: "utterances" %}
 {% if provider == "disqus" %}
     {% assign disqus = site.disqus | default:site.disqus_shortname %}
     {% if disqus %}
@@ -27,10 +27,10 @@
 {% elsif provider == "utterances" %}
     {% assign utterances = site.utterances %}
     <script src="https://utteranc.es/client.js"
-        repo=           {{ utterances.repo }}
-        issue-term=     {{ utterances.issue-term }}
-        theme=          {{ utterances.theme }}
-        crossorigin=    "anonymous"
+        repo="seogilwon/blog-comments-repo"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
         async>
     </script>
 {% endif %}
