@@ -4,7 +4,7 @@
 {% if include.text.size > 0 %}
   {% unless include.hide %}
     <p class="{{ include.class | default:'note-sm' }}" {% if include.property %}property="{{ include.property }}"{% endif %}>
-      {{ include.text | markdownify | replace:"<p>","" | replace:"</p>","" }}
+        {{ include.text | markdownify | replace:"<p>","" | replace:"</p>","" }}
     </p>
   {% else %}
     {{ alt }}

@@ -22,7 +22,7 @@ layout: base
 <div class="page">
   <h1 class="page-title">{{ page.title | default:strings.not_found.title | default: "404: Page Not Found" }}</h1>
   <div class="hr pb0"></div>
-
+  <div class="markdown-body">
   {% assign test = page.content | strip_newlines %}
   {% if test != "" %}
     {{ content }}
@@ -34,4 +34,5 @@ layout: base
       {{ text | replace:"<!--home_link-->", home_link }}
     </p>
   {% endif %}
+  </div>
 </div>

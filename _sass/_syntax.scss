@@ -1,143 +1,86 @@
-@mixin lightmode-syntax() {
-  .highlight,
-  pre.highlight {
-    // background: #fafafa;
-    color: #383a42;
-  }
-  // .highlight pre {
-  //   background: #fafafa;
-  // }
-  .highlight .ge {
-    font-style: italic;
-  }
-  .highlight .gs {
-    font-weight: 700;
-  }
-  .highlight .ow {
-    font-weight: 700;
-  }
-  .highlight .n,
-  .highlight .nf,
-  .highlight .nn,
-  .highlight .o,
-  .highlight .p {
-    color: #383a42;
-  }
-  .highlight .c,
-  .highlight .c1,
-  .highlight .cm,
-  .highlight .cp,
-  .highlight .cs {
-    color: #a0a1a7;
-    font-style: italic;
-  }
-  .highlight .sr,
-  .highlight .ss {
-    color: #0184bc;
-  }
-  .highlight .k,
-  .highlight .kc,
-  .highlight .kd,
-  .highlight .kn,
-  .highlight .kp,
-  .highlight .kr,
-  .highlight .kt {
-    color: #a626a4;
-  }
-  .highlight .l,
-  .highlight .ld,
-  .highlight .s,
-  .highlight .s1,
-  .highlight .s2,
-  .highlight .sb,
-  .highlight .sc,
-  .highlight .sd,
-  .highlight .se,
-  .highlight .sh,
-  .highlight .si,
-  .highlight .sx {
-    color: #50a14f;
-  }
-  .highlight .nt,
-  .highlight .nx,
-  .highlight .vi {
-    color: #e45649;
-  }
-  .highlight .il,
-  .highlight .m,
-  .highlight .mf,
-  .highlight .mh,
-  .highlight .mi,
-  .highlight .mo,
-  .highlight .na {
-    color: #986801;
-  }
-  .highlight .bp,
-  .highlight .nb,
-  .highlight .nc,
-  .highlight .nd,
-  .highlight .ne,
-  .highlight .ni,
-  .highlight .nl,
-  .highlight .no,
-  .highlight .nv,
-  .highlight .py,
-  .highlight .vc,
-  .highlight .vg {
-    color: #c18401;
-  }
-  // .highlight .err {
-  //   color: #fff;
-  //   background-color: #ff1414;
-  // }
-  .highlight .gd {
-    color: #ff1414;
-  }
-  .highlight .gi {
-    color: #2db448;
-  }
-  .highlight .w {
-    color: #f8f8f2;
-  }
-  .highlight .cpf {
-    color: navy;
-  }
-  .highlight .gu {
-    color: #75715e;
-  }
-  .highlight .lineno {
-    color: #9d9d9f;
-    user-select: none;
-  }
-  .highlight .ln {
-    color: #9d9d9f;
-    user-select: none;
-  }
-  .highlight .ln:after {
-    content: " ";
-  }
-  .highlight .hll {
-    color: #383a42;
-    background-color: #e5e5e6;
-  }
-  .highlight .hl {
-    color: #383a42;
-    background-color: #e5e5e6;
-  }
-  .highlight .language-json .w + .s2 {
-    color: #e45649;
-  }
-  .highlight .language-json .kc {
-    color: #0184bc;
-  }
+/* code block theme [Rouge - base16.dark] */
+div .highlight{
+  border-radius: 5px;
 }
 
-body {
-  @include lightmode-syntax();
+.highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight, .highlight .w {
+  color: #d0d0d0;
+  background-color: #151515;
 }
-
-@media screen {
-  body.light-mode {
-    @include lightmode-syntax();
-  }
+.highlight .err {
+  color: #151515;
+  background-color: #ac4142;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs {
+  color: #505050;
+}
+.highlight .cp {
+  color: #f4bf75;
+}
+.highlight .nt {
+  color: #f4bf75;
+}
+.highlight .o, .highlight .ow {
+  color: #d0d0d0;
+}
+.highlight .p, .highlight .pi {
+  color: #d0d0d0;
+}
+.highlight .gi {
+  color: #90a959;
+}
+.highlight .gd {
+  color: #ac4142;
+}
+.highlight .gh {
+  color: #6a9fb5;
+  background-color: #151515;
+  font-weight: bold;
+}
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+  color: #aa759f;
+}
+.highlight .kc {
+  color: #d28445;
+}
+.highlight .kt {
+  color: #d28445;
+}
+.highlight .kd {
+  color: #d28445;
+}
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+  color: #90a959;
+}
+.highlight .sa {
+  color: #aa759f;
+}
+.highlight .sr {
+  color: #75b5aa;
+}
+.highlight .si {
+  color: #8f5536;
+}
+.highlight .se {
+  color: #8f5536;
+}
+.highlight .nn {
+  color: #f4bf75;
+}
+.highlight .nc {
+  color: #f4bf75;
+}
+.highlight .no {
+  color: #f4bf75;
+}
+.highlight .na {
+  color: #6a9fb5;
+}
+.highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mx {
+  color: #90a959;
+}
+.highlight .ss {
+  color: #90a959;
 }
